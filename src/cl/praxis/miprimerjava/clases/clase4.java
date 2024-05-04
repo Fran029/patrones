@@ -1,4 +1,4 @@
-package cl.praxis.miprimerjava;
+package cl.praxis.miprimerjava.clases;
 
 import java.util.Scanner;
 

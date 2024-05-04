@@ -9,6 +9,13 @@ public class clase11 {public static void main(String[] arg) {
     String ingreso = null;
     int ascii = 0;
     int contador = 0;
+    /*
+     * Valores en ascci de los signos
+     * = -> 61
+     * - -> 45
+     * + -> 43
+     *  */
+
     do{
 
 
@@ -26,8 +33,25 @@ public class clase11 {public static void main(String[] arg) {
         contador ++;
     }else{
         if(ascii ==43){
-            System.out.println();
+            System.out.println("ingrese un numero");
+            ingreso = sc.next();
+            numero = Float.parseFloat(ingreso);
+            resultado = resultado + numero;
+            contador++;
+        }
+        if (ascii == 45) {
+            System.out.println("ingrese un numero");
+            ingreso = sc.next();
+            numero = Float.parseFloat(ingreso);
+            resultado = resultado - numero;
+            contador++;
         }
     }
+    }while((int)ingreso.charAt(0) !=61);
+    System.out.println("El resultado es: " + resultado);
 }
+}
+
+
+
 
